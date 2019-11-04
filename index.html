@@ -295,7 +295,22 @@
 				<p class="post-meta">
 					
 
+	
+    <span class="leancloud_visitors" id="/2019/11/04/hello-world/_visitors" data-url="/2019/11/04/hello-world/" data-title="Hello World">
+       	<i class="fa fa-eye"></i>
+       	热度
+        <i class="leancloud_visitors_count" id="leancloud_visitors_count">0</i>
+    </span>
+    
 
+
+
+	
+    <span class="leancloud_likes" id="/2019/11/04/hello-world/_likes" data-url="/2019/11/04/hello-world/" data-title="Hello World" rel="unlike">
+        <i class="fa fa-heart"></i>
+        喜欢
+        <i class="leancloud_likes_count" id="leancloud_likes_count">0</i>
+    </span>
 
 					
 
@@ -318,6 +333,95 @@
 				参考了01 & 02进行简单的设计与实现
 -->
 
+
+
+	<script>
+		var appid = 'INhpDFRrc2F3lsRnwUFtCeQ6-gzGzoHsz',
+            appkey = 'heK8dVJ8nXyRfn5fHblW88gs';	  
+        AnnieLeancloud(appid, appkey);         
+	</script>
+    
+
+	
+
+				</p>
+			</div>
+		</div>
+		
+		<div class="post" id="post">
+			<a class="post-cover" href="/2019/11/01/%E5%9C%A8%E4%BA%91%E7%AB%AF%E5%88%9B%E5%BB%BAvpn/" title=" 在云端创建vpn ">
+				
+				<img class="lazy" src="/img/placeholder.jpg" data-src="/img/quote/vpn.jpg"/>
+			</a>
+
+			<div class="post-text">
+				<p class="post-time">
+					十一月 1日, 2019
+				</p>	
+				<h3 class="post-title" id="post-title-index">
+					<a href="/2019/11/01/%E5%9C%A8%E4%BA%91%E7%AB%AF%E5%88%9B%E5%BB%BAvpn/" title="在云端创建vpn">
+						<i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+						
+	<a href="/2019/11/01/%E5%9C%A8%E4%BA%91%E7%AB%AF%E5%88%9B%E5%BB%BAvpn/" itemprop="url">
+		在云端创建vpn
+	</a>
+
+					</a>
+				</h3>
+				<p class="post-content">
+					
+						第一步：创建见云服务器服务器的地址选择国外的地址，推荐日本、香港和新加坡，每个地方的网络延迟都有不同，所以可以在创建好服务器之后ping 下服务器的ip地...
+					
+				</p>
+				<p class="post-meta">
+					
+
+	
+    <span class="leancloud_visitors" id="/2019/11/01/%E5%9C%A8%E4%BA%91%E7%AB%AF%E5%88%9B%E5%BB%BAvpn/_visitors" data-url="/2019/11/01/%E5%9C%A8%E4%BA%91%E7%AB%AF%E5%88%9B%E5%BB%BAvpn/" data-title="在云端创建vpn">
+       	<i class="fa fa-eye"></i>
+       	热度
+        <i class="leancloud_visitors_count" id="leancloud_visitors_count">0</i>
+    </span>
+    
+
+
+
+	
+    <span class="leancloud_likes" id="/2019/11/01/%E5%9C%A8%E4%BA%91%E7%AB%AF%E5%88%9B%E5%BB%BAvpn/_likes" data-url="/2019/11/01/%E5%9C%A8%E4%BA%91%E7%AB%AF%E5%88%9B%E5%BB%BAvpn/" data-title="在云端创建vpn" rel="unlike">
+        <i class="fa fa-heart"></i>
+        喜欢
+        <i class="leancloud_likes_count" id="leancloud_likes_count">0</i>
+    </span>
+
+					
+
+	<!-- leancloud -->
+	<!--
+	时间：2018-11-27
+	描述：
+		文章访问量：visitors
+		文章喜欢量：likes	
+		文章排行榜：topNPost
+		其他得说明：
+			01-Cookie相关的函数 
+				https://blog.csdn.net/somehow1002/article/details/78511541（Author：somehow1002）
+			02-visitors相关的函数 
+				https://blog.csdn.net/u013553529/article/details/63357382（Author：爱博客大伯）
+				https://notes.doublemine.me/2015-10-21-为NexT主题添加文章阅读量统计功能.html（Author：夏末）
+			03-topNPost相关的函数
+				https://hoxis.github.io/hexo-next-read-rank.html（Author：hoxis）
+			04-likes相关的函数，
+				参考了01 & 02进行简单的设计与实现
+-->
+
+
+
+	<script>
+		var appid = 'INhpDFRrc2F3lsRnwUFtCeQ6-gzGzoHsz',
+            appkey = 'heK8dVJ8nXyRfn5fHblW88gs';	  
+        AnnieLeancloud(appid, appkey);         
+	</script>
+    
 
 	
 
@@ -387,7 +491,7 @@
 	<div class="copyright">
 		<p>
 			 
-				&copy;2017 - 2019, content by Ask. All Rights Reserved.
+				&copy;2019, content by Ask. All Rights Reserved.
 			
 			
 			
@@ -455,6 +559,23 @@
 		<div class="local-search-footer">
 			<div class="topN-post">				
 				
+
+   
+	<div id="topN">
+		<div class="topN-title" data-title= "热门文章"></div> 
+	</div>
+	
+    <script>
+        var appid = 'INhpDFRrc2F3lsRnwUFtCeQ6-gzGzoHsz',
+            appkey = 'heK8dVJ8nXyRfn5fHblW88gs',
+            limitCount = 10;
+        if( $('#topN').length ){
+            AV.initialize(appid, appkey);
+            var Counter = AV.Object.extend("Counter");  
+            topNPost(Counter, limitCount);
+        }
+    </script>
+   
 								
 			</div>
 		</div>
